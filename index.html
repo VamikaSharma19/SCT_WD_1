@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ChicBazaar - Clothing Store</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Font Awesome CDN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<header class="navbar">
+  <div class="menu-icon" onclick="toggleMenu()">
+  <i class="fa-solid fa-bars"></i>
+  </div>
+    <div class="brand"> ChicBazaar </div>
+    <nav class="nav-links">
+      <a href="#">Home</a>
+      <a href="#about">About Us</a>
+      <a href="#collections">Collections</a>
+      <a href="#offers">Offers</a>
+      <a href="#">Shop Now</a>
+    </nav>
+</header>
+
+<!-- Home Page Section -->
+<section class="home-section">
+  <div class="home-content">
+    <!-- Left Content -->
+    <div class="home-left">
+      <h1><span>ChicBazaar</span></h1>
+      <h2>Where Fashion Meets Elegance</h2>
+      <p>
+        Step into a world of timeless trends and bold styles.<br>
+        Discover the perfect blend of <b>comfort</b>, <b>creativity</b>, and <b>luxury</b>.
+      </p>
+      <button class="explore-btn" onclick="location.href='#collections'">Explore the Collection</button>
+    </div>
+    <!-- Right Content -->
+    <div class="images-container">
+      <div class="animation-images">
+        <img src="Home (1).jpg" alt="Style 1">
+        <img src="Home (2).jpg" alt="Style 2">
+        <img src="Home (3).jpg" alt="Style 3">
+        <img src="Home (4).jpg" alt="Style 4">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- About Us Section -->
+<section class="about" id="about">
+  <div class="about-container">
+    <div class="about-images">
+      <img src="https://images.unsplash.com/photo-1562684900-06a3282dfd64?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDEwfHx8ZW58MHx8fHx8" class="main-img" alt="Fashion">
+      <img src="https://images.unsplash.com/photo-1603152450394-d8ed24bd9f0a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDI1fHx8ZW58MHx8fHx8" class="sub-img" alt="Fashion Style">
+      <img src="https://images.unsplash.com/photo-1545911927-7c17fa4d3727?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDV8fHxlbnwwfHx8fHw%3D" class="bottom-img" alt="Extra Fashion Image">
+    </div>
+    <div class="about-text">
+      <h2>About Us</h2>
+      <p>
+        At <b>ChicBazaar</b>, we believe fashion is more than just clothing — it's a lifestyle. 
+        Our mission is to bring the latest trends at affordable prices, while keeping comfort 
+        and quality at the heart of everything we do.
+      </p>
+      <div class="about-highlights">
+        <div class="highlight">
+          <div class="icon">✨</div>
+          <h3>Trendy Styles</h3>
+          <p>Curated collections that make you stand out effortlessly.</p>
+        </div>
+        <div class="highlight">
+          <div class="icon">🧵</div>
+          <h3>Premium Quality</h3>
+          <p>Fabrics and fits that feel as good as they look.</p>
+        </div>
+        <div class="highlight">
+        <div class="icon">🌟</div>
+        <h3>Why Choose Us?</h3>
+        <p>Passion, creativity, and innovation in every piece.</p>
+        </div>
+        <div class="highlight">
+          <div class="icon">🤝</div>
+          <h3>Customer First</h3>
+          <p>Your satisfaction is our ultimate fashion goal.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Our Collections Sections -->
+<section class="collections" id="collections">
+  <h2>Our Collections</h2>
+  <!-- Category Filter -->
+  <div class="category-cards">
+    <div class="card active" data-category="all">All</div>
+    <div class="card" data-category="tops">Tops</div>
+    <div class="card" data-category="dresses">Dresses</div>
+    <div class="card" data-category="skirts">Skirts</div>
+  </div>
+  <!-- Products Grid -->
+  <div class="products-grid">
+    <!-- Tops (4) -->
+    <div class="product-item" data-category="tops">
+      <img src="White Top.jpg" alt="White Top">
+      <h3>White Summer Top</h3>
+      <p>Price: $25</p>
+      <button class="shop-now">Shop Now</button>
+    </div>
+    <div class="product-item" data-category="tops">
+      <img src="Pink Top.jpg" alt="Pink Top">
+      <h3>Pink Casual Top</h3>
+      <p>Price: $28</p>
+      <button class="shop-now">Shop Now</button>
+    </div>
+    <div class="product-item" data-category="tops">
+      <img src="Blue Top.jpg" alt="Blue Top">
+      <h3>Blue Chic Top</h3>
+      <p>Price: $27</p>
+      <button class="shop-now">Shop Now</button>
+    </div>
+    <div class="product-item" data-category="tops">
+      <img src="Yellow Top.jpg" alt="Yellow Top">
+      <h3>Yellow Summer Top</h3>
+      <p>Price: $26</p>
+      <button class="shop-now">Shop Now</button>
+    </div>
+    <!-- Dresses (2) -->
+    <div class="product-item" data-category="dresses">
+      <img src="Blue Evening Dress.jpg" alt="Blue Dress">
+      <h3>Blue Evening Dress</h3>
+      <p>Price: $50</p>
+      <button class="shop-now">Shop Now</button>
+    </div>
+    <div class="product-item" data-category="dresses">
+      <img src="Pink Summer Dress.jpg" alt="Pink Dress">
+      <h3>Pink Summer Dress</h3>
+      <p>Price: $47</p>
+      <button class="shop-now">Shop Now</button>
+    </div>
+    <!-- Skirts (4) -->
+    <div class="product-item" data-category="skirts">
+      <img src="Floral Skirt.jpg" alt="Floral Skirt">
+      <h3>Floral Skirt</h3>
+      <p>Price: $30</p>
+      <button class="shop-now">Shop Now</button>
+    </div>
+    <div class="product-item" data-category="skirts">
+      <img src="Long A-Line Skirt.jpg" alt="Long Skirt">
+      <h3>Long A-line Skirt</h3>
+      <p>Price: $32</p>
+      <button class="shop-now">Shop Now</button>
+    </div>
+    <div class="product-item" data-category="skirts">
+      <img src="Pleated Skirt.png" alt="Pleated Skirt">
+      <h3>Pleated Skirt</h3>
+      <p>Price: $33</p>
+      <button class="shop-now">Shop Now</button>
+    </div>
+    <div class="product-item" data-category="skirts">
+      <img src="Denim Skirt.jpg" alt="Denim Skirt">
+      <h3>Denim Skirt</h3>
+      <p>Price: $35</p>
+      <button class="shop-now">Shop Now</button>
+    </div>
+  </div>
+  <!-- Explore More Button -->
+  <div class="explore-more">
+    <button class="explore-btn">Explore More Collection</button>
+  </div>
+</section>
+
+<!-- Offers Section -->
+<section class="offers-section" id="offers">
+  <h2 class="offers-heading">Special Offers For You</h2>
+  <div class="offers-grid">
+    <!-- Offer 1 -->
+    <div class="offer-card" style="background-image: url('https://images.unsplash.com/photo-1689326561417-78ad743ff4e2?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8c3VtbWVyJTIwc2FsZXxlbnwwfHwwfHx8MA%3D%3D');">
+      <div class="offer-content">
+        <h3>Summer Collection</h3>
+        <p>Flat 40% OFF + Extra 10% on Tops</p>
+        <button>Shop Now</button>
+      </div>
+    </div>
+    <!-- Offer 2 -->
+    <div class="offer-card" style="background-image: url('https://plus.unsplash.com/premium_photo-1723867344540-664e13b9a863?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fHNraXJ0cyUyMGRlYWwlMjBzYWxlfGVufDB8fDB8fHww');">
+      <div class="offer-content">
+        <h3>End of Season Sale</h3>
+        <p>Up to 50% OFF on Dresses</p>
+        <button>Shop Now</button>
+      </div>
+    </div>
+    <!-- Offer 3 -->
+    <div class="offer-card" style="background-image: url('https://plus.unsplash.com/premium_photo-1670509045675-af9f249b1bbe?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YnV5JTIwb25lJTIwZ2V0JTIwb25lJTIwZnJlZXxlbnwwfHwwfHx8MA%3D%3D');">
+      <div class="offer-content">
+        <h3>First Purchase Discount</h3>
+        <p>Flat 20% OFF on your first purchase.</p>
+        <button>Shop Now</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer Section -->
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-box">
+      <h3>Contact Us</h3>
+      <ul>
+        <li><a href="#"> <i class="fa-solid fa-map-pin"></i> 123, Fashion Street, New Delhi</a></li>
+        <li><a href="tel:+911234567890"> <i class="fa-solid fa-phone"></i> +91 12345 67890</a></li>
+        <li><a href="mailto:support@chicbazaar.com"> <i class="fa-solid fa-envelope"></i> support@chicbazaar.com</a></li>
+      </ul>
+    </div>
+    <div class="footer-box">
+      <h3>Useful Links</h3>
+      <ul>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Shipping Info</a></li>
+        <li><a href="#">Help & Support</a></li>
+        <li><a href="#">Returns & Refunds</a></li>
+        <li><a href="#">FAQs</a></li>
+      </ul>
+    </div>
+    <div class="footer-box">
+      <h3>Follow Us</h3>
+      <div class="social-icons">
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+      </div>
+    </div>
+    <div class="footer-box newsletter">
+      <h3>Our Newsletter</h3>
+      <p>Subscribe to get special offers, free giveaways, and the latest trends.</p>
+      <div class="newsletter-form">
+        <input type="email" placeholder="Enter your email">
+        <button>Subscribe</button>
+      </div>
+    </div>
+  </div>
+  </footer>
+<div class="footer-bottom">
+  <p>&copy; 2025 ChicBazaar. All rights reserved.</p>
+  <div class="footer-links">
+    <a href="#">Privacy</a> | 
+    <a href="#">Terms</a> | 
+    <a href="#">Contact</a>
+  </div>
+<button id="backToTop" title="Go to top">↑</button>
+
+<script src="index.js"></script>
+</body>
+</html>
